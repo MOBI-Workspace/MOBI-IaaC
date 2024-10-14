@@ -55,7 +55,7 @@ layer_source_path               = "../dependencies"
 ############################################################################################################
 # Variables para los buckets de S3
 ############################################################################################################
-cloufront_bucket                = "s3-np-dev-mobi-cloudfront-413f99cc"
+cloudfront_bucket               = "s3-np-dev-mobi-cloudfront-413f99cc"
 bedrock_model_bucket            = "s3-np-dev-mobi-bedrock-model-dad00a01"
 ############################################################################################################
 # Variables para dynamodb
@@ -71,3 +71,9 @@ api_gateway_name_bedrock        = "api-gateway-np-dev-mobi"
 image_registry_name_query       = "image-registry-np-dev-mobi-query"
 image_registry_name_commands    = "image-registry-np-dev-mobi-commands"
 image_registry_name_bedrock     = "image-registry-np-dev-mobi-bedrock"
+############################################################################################################
+# Variables para el Certificate SSL
+############################################################################################################
+route53_domain_name             = "mobit-sbox-dev.click"
+route53_hosted_zone_id          = "Z06656361PUNPQKCRFFRW"
+oac_name                        = "oac-np-dev-mobi"

@@ -158,7 +158,7 @@ variable "layer_source_path" {
 ############################################################################################################
 # Variables para los buckets de S3
 ############################################################################################################
-variable "cloufront_bucket" {
+variable "cloudfront_bucket" {
     description = "The name of the S3 bucket for CloudFront"
     type        = string
 }
@@ -192,4 +192,20 @@ variable "image_registry_name_commands" {
 
 variable "image_registry_name_bedrock" {
     description = "Nombre del Image Registry para la Lambda de Bedrock"
+}
+############################################################################################################
+# Variables para el Certificate SSL
+############################################################################################################
+variable "route53_domain_name" {
+    description = "Nombre del dominio de Route53"
+}
+
+variable "route53_hosted_zone_id" {
+    description = "ID de la zona de Route53"
+}
+############################################################################################################
+# Variables para CloudFront
+############################################################################################################
+variable "oac_name" {
+    description = "Nombre del OAC"
 }
